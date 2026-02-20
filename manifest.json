@@ -1,0 +1,16 @@
+{
+  "name": "João Victor Carvalho — Portfolio",
+  "short_name": "JV.dev",
+  "description": "Portfolio de João Victor Carvalho, estudante de Engenharia de Software.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#07070e",
+  "theme_color": "#39ffb0",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%2307070e'/><text y='72' x='50' text-anchor='middle' font-size='60' font-family='monospace' fill='%2339ffb0'>JV</text></svg>",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

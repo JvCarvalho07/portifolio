@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>João Victor Carvalho — Desenvolvedor</title>
+  <meta name="description" content="Portfólio de João Victor Carvalho. Estudante de Engenharia de Software em Belém, PA. Disponível para estágio em TI.">
+  <meta name="theme-color" content="#07070e">
+
+  <!-- Preload crítico -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,700;12..96,800&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=Fragment+Mono&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/index.css">
+
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+  <!-- Nav / Footer injetados por layout.js -->
+  <div id="nav-placeholder"></div>
+
+  <div class="page-wrapper">
+    <main>
+
+      <!-- ══════════════════════════════════════
+           HERO
+      ══════════════════════════════════════ -->
+      <section id="hero">
+        <canvas id="hero-canvas" class="canvas-bg" aria-hidden="true"></canvas>
+        <div class="blob hero-blob-1"></div>
+        <div class="blob hero-blob-2"></div>
+
+        <!-- Left -->
+        <div class="hero-content">
+          <div class="hero-intro">
+            <span>Disponível para estágio</span>
+          </div>
+
+          <h1 class="hero-name">
+            João<br>
+            Victor<span class="accent">.</span>
+          </h1>
+
+          <div class="hero-role">
+            <span id="hero-role-text" class="hero-role-text"></span><span class="hero-role-cursor" aria-hidden="true"></span>
+          </div>
+
+          <p class="hero-desc">
+            Estudante de <strong>Engenharia de Software</strong> na UNINTER, baseado em Belém, PA.
+            Apaixonado por tecnologia e determinado a transformar código em soluções reais.
+          </p>
+
+          <div class="hero-ctas">
+            <a href="projetos.html" class="btn btn-primary">
+              <span>Ver Projetos</span>
+              <span>→</span>
+            </a>
+            <a href="contato.html" class="btn btn-secondary">Entrar em Contato</a>
+            <a href="sobre.html" class="btn btn-ghost">Sobre mim</a>
+          </div>
+
+          <div class="hero-stack">
+            <div class="hero-stack-label">Stack em estudo</div>
+            <div class="hero-stack-pills">
+              <span class="stack-pill"><span>🐍</span>Python</span>
+              <span class="stack-pill"><span>🌐</span>HTML &amp; CSS</span>
+              <span class="stack-pill"><span>🧠</span>Lógica de Programação</span>
+              <span class="stack-pill"><span>🐧</span>Linux</span>
+              <span class="stack-pill"><span>⌨️</span>Git (aprendendo)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: terminal + stats -->
+        <div class="hero-terminal">
+          <div class="terminal-card">
+            <div class="terminal-topbar">
+              <div class="t-dot t-dot-r"></div>
+              <div class="t-dot t-dot-y"></div>
+              <div class="t-dot t-dot-g"></div>
+              <span class="terminal-title">perfil.json</span>
+            </div>
+            <div class="terminal-body">
+              <div class="t-line">
+                <span class="t-prompt">$</span>
+                <span style="color:var(--muted2)">cat perfil.json</span>
+              </div>
+              <br>
+              <div class="t-line"><span class="t-output">{</span></div>
+              <div class="t-line" style="padding-left:1rem">
+                <span class="t-key">"nome"</span><span class="t-output">:&nbsp;</span><span class="t-str">"João Victor Carvalho"</span><span class="t-output">,</span>
+              </div>
+              <div class="t-line" style="padding-left:1rem">
+                <span class="t-key">"idade"</span><span class="t-output">:&nbsp;</span><span class="t-num">18</span><span class="t-output">,</span>
+              </div>
+              <div class="t-line" style="padding-left:1rem">
+                <span class="t-key">"curso"</span><span class="t-output">:&nbsp;</span><span class="t-str">"Eng. de Software"</span><span class="t-output">,</span>
+              </div>
+              <div class="t-line" style="padding-left:1rem">
+                <span class="t-key">"cidade"</span><span class="t-output">:&nbsp;</span><span class="t-str">"Belém, PA 🌿"</span><span class="t-output">,</span>
+              </div>
+              <div class="t-line" style="padding-left:1rem">
+                <span class="t-key">"status"</span><span class="t-output">:&nbsp;</span><span class="t-str" style="color:var(--accent)">"open_to_internship"</span><span class="t-output">,</span>
+              </div>
+              <div class="t-line" style="padding-left:1rem">
+                <span class="t-key">"disponivel"</span><span class="t-output">:&nbsp;</span><span class="t-val">true</span>
+              </div>
+              <div class="t-line"><span class="t-output">}</span></div>
+              <div class="t-cursor-line">
+                <span class="t-prompt">$</span>
+                <span class="t-cursor"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <div class="stat-val">2026</div>
+              <div class="stat-lbl">Início na faculdade</div>
+            </div>
+            <div class="hero-stat">
+              <div class="stat-val">5+</div>
+              <div class="stat-lbl">Tecnologias</div>
+            </div>
+            <div class="hero-stat">
+              <div class="stat-val">100%</div>
+              <div class="stat-lbl">Disponibilidade</div>
+            </div>
+            <div class="hero-stat">
+              <div class="stat-val">∞</div>
+              <div class="stat-lbl">Vontade de aprender</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="scroll-indicator" aria-hidden="true">
+          <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+          <span>scroll</span>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════════════
+           TICKER
+      ══════════════════════════════════════ -->
+      <div id="features" aria-hidden="true">
+        <div class="features-ticker">
+          <!-- duplicado para loop contínuo -->
+          <span class="ticker-item"><span class="ticker-dot"></span>Engenharia de Software</span>
+          <span class="ticker-item"><span class="ticker-dot"></span>Desenvolvimento Web</span>
+          <span class="ticker-item"><span class="ticker-dot"></span>Python</span>
+          <span class="ticker-item"><span class="ticker-dot"></span>Lógica de Programação</span>
+          <span class="ticker-item"><span class="ticker-dot"></span>Linux</span>
+          <span class="ticker-item"><span class="ticker-dot"></span>Disponível para Estágio</span>
+          <span class="ticker-item"><span class="ticker-dot"></span>Belém, PA</span>
+          <span class="ticker-item"><span class="ticker-dot"></span>UNINTER 2026</span>
+          <span class="ticker-item"><span class="ticker-dot"></span>Engenharia de Software</span>
+          <span class="ticker-item"><span class="ticker-dot"></span>Desenvolvimento Web</span>
+          <span class="ticker-item"><span class="ticker-dot"></span>Python</span>
+          <span class="ticker-item"><span class="ticker-dot"></span>Lógica de Programação</span>
+          <span class="ticker-item"><span class="ticker-dot"></span>Linux</span>
+          <span class="ticker-item"><span class="ticker-dot"></span>Disponível para Estágio</span>
+          <span class="ticker-item"><span class="ticker-dot"></span>Belém, PA</span>
+          <span class="ticker-item"><span class="ticker-dot"></span>UNINTER 2026</span>
+        </div>
+      </div>
+
+      <!-- ══════════════════════════════════════
+           QUICK ABOUT
+      ══════════════════════════════════════ -->
+      <section id="quick-about">
+        <div class="quick-about-inner">
+          <div class="quick-about-text">
+            <div class="section-eyebrow">Quem sou</div>
+            <h2 class="section-title">Uma jornada que<br>está começando.</h2>
+            <p>
+              Tenho <strong>18 anos</strong> e escolhi Engenharia de Software com propósito.
+              Moro em Belém, no coração da Amazônia, e acredito que tecnologia é um dos maiores
+              agentes de transformação da nossa geração.
+            </p>
+            <p>
+              Ainda estou no início — sem projetos formais no portfólio ainda —
+              mas comprometido a mudar isso. Cada dia é um commit a mais na minha trajetória.
+            </p>
+            <a href="sobre.html" class="btn btn-secondary">Conhecer minha história →</a>
+          </div>
+
+          <div class="quick-about-visual reveal">
+            <div class="info-card">
+              <div class="info-card-icon">🎓</div>
+              <div class="info-card-title">Engenharia de Software</div>
+              <div class="info-card-text">UNINTER · 2026 · 1º Ano</div>
+            </div>
+            <div class="info-card">
+              <div class="info-card-icon">📍</div>
+              <div class="info-card-title">Belém, Pará</div>
+              <div class="info-card-text">Amazônia · Brasil</div>
+            </div>
+            <div class="info-card">
+              <div class="info-card-icon">🔍</div>
+              <div class="info-card-title">Buscando estágio</div>
+              <div class="info-card-text">TI · Suporte · Dev · Adm</div>
+            </div>
+            <div class="info-card">
+              <div class="info-card-icon">⚡</div>
+              <div class="info-card-title">Disponível agora</div>
+              <div class="info-card-text">Horário integral · Presencial ou remoto</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <div id="footer-placeholder"></div>
+  </div><!-- /page-wrapper -->
+
+  <script src="js/layout.js"></script>
+  <script src="js/app.js"></script>
+
+  <!-- Service Worker -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('./sw.js').catch(() => {});
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato — João Victor Carvalho</title>
+  <meta name="description" content="Entre em contato com João Victor Carvalho para oportunidades de estágio em TI.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,700;12..96,800&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=Fragment+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+  <div id="nav-placeholder"></div>
+
+  <div class="page-wrapper">
+    <main>
+
+      <!-- PAGE HERO -->
+      <div class="page-hero container">
+        <div class="section-eyebrow">Contato</div>
+        <h1 class="page-hero-title">Vamos conversar<br>sobre uma vaga.</h1>
+        <p class="page-hero-sub">
+          Estou disponível para estágio em TI, suporte técnico ou desenvolvimento.
+          Me manda uma mensagem — responderei rápido.
+        </p>
+      </div>
+
+      <hr class="divider">
+
+      <!-- CONTATO SECTION -->
+      <section class="contato-section">
+        <div class="contato-inner container">
+
+          <!-- Esquerda: info -->
+          <div class="contato-left">
+            <div class="section-eyebrow">Informações de contato</div>
+            <h2 class="section-title reveal" style="margin-bottom:1.25rem">Fale comigo</h2>
+            <p class="reveal">
+              Prefiro uma conversa direta. Se você tem uma vaga de estágio, quer tirar dúvidas
+              sobre meu perfil ou simplesmente quer falar sobre tecnologia — pode chamar.
+            </p>
+
+            <div class="contact-items reveal">
+
+              <div class="contact-item">
+                <div class="contact-item-icon">✉️</div>
+                <div class="contact-item-body">
+                  <div class="contact-item-label">E-mail</div>
+                  <div class="contact-item-val">joaovictordev2207@gmail.com</div>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-item-icon">📱</div>
+                <div class="contact-item-body">
+                  <div class="contact-item-label">Celular / WhatsApp</div>
+                  <div class="contact-item-val">+55 (75) 99245-9496</div>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-item-icon">📍</div>
+                <div class="contact-item-body">
+                  <div class="contact-item-label">Localização</div>
+                  <div class="contact-item-val">Belém, Pará — PA · 66073-055</div>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-item-icon">⏰</div>
+                <div class="contact-item-body">
+                  <div class="contact-item-label">Disponibilidade</div>
+                  <div class="contact-item-val">Horário integral · Imediato</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Direita: formulário -->
+          <div class="reveal">
+            <div class="contact-form-box">
+              <div class="form-title">Enviar mensagem</div>
+              <div class="form-subtitle">Preencha o formulário e responderei em até 24h.</div>
+
+              <form class="form-grid" id="contact-form" novalidate>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label class="form-label" for="f-name">Nome *</label>
+                    <input id="f-name" name="name" type="text" class="form-control" placeholder="Seu nome" required autocomplete="name">
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="f-email">E-mail *</label>
+                    <input id="f-email" name="email" type="email" class="form-control" placeholder="seu@email.com" required autocomplete="email">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="f-subject">Assunto</label>
+                  <input id="f-subject" name="subject" type="text" class="form-control" placeholder="Ex: Vaga de estágio em TI">
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="f-message">Mensagem *</label>
+                  <textarea id="f-message" name="message" class="form-control" placeholder="Descreva a oportunidade ou sua mensagem…" required></textarea>
+                </div>
+
+                <!-- Anti-spam honeypot (oculto) -->
+                <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+
+                <div class="form-submit">
+                  <button type="submit" class="btn btn-primary">
+                    Enviar mensagem →
+                  </button>
+                </div>
+
+                <div class="form-feedback" id="form-feedback"></div>
+
+                <!-- Aviso se Formspree não configurado -->
+                <div class="formspree-notice" id="formspree-notice">
+                  ⚙ <strong>Para o formulário funcionar:</strong> abra <code>js/features.js</code>,
+                  vá em <code>ContactForm</code> e cole seu Form ID do
+                  <a href="https://formspree.io" target="_blank" style="color:var(--accent)">formspree.io</a>
+                  em <code>FORMSPREE_ID</code>. Gratuito, 50 msgs/mês.
+                </div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+    <div id="footer-placeholder"></div>
+  </div>
+
+  <script src="js/layout.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/features.js"></script>
+
+</body>
+</html>
