@@ -757,7 +757,7 @@ textarea.form-control { min-height: 130px; }
    RESPONSIVO SHARED
 ══════════════════════════════════════════ */
 @media (max-width: 1024px) {
-  .info-val   { color: var(--text); font-weight: 500; font-family: var(--font-mono); font-size: 0.73rem; }
+  .info-val   { color: var(--text); font-weight: 500; font-family: var(--font-mono); font-size: 0.71rem; }
 }
 @media (max-width: 900px) {
   .sobre-inner      { grid-template-columns: 1fr; gap: 3rem; }
