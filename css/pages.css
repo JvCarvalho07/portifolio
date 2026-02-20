@@ -120,12 +120,12 @@
   align-items: center;
   padding: 0.45rem 0;
   border-bottom: 1px solid var(--border-soft);
-  font-size: 0.85rem;
+  font-size: 0.89rem;
 }
 
 .info-row:last-child { border-bottom: none; }
 .info-label { color: var(--muted); font-weight: 300; }
-.info-val   { color: var(--text); font-weight: 500; font-family: var(--font-mono); font-size: 0.78rem; }
+.info-val   { color: var(--text); font-weight: 500; font-family: var(--font-mono); font-size: 0.89rem; }
 
 /* Status badge */
 .status-badge {
@@ -756,11 +756,15 @@ textarea.form-control { min-height: 130px; }
 /* ══════════════════════════════════════════
    RESPONSIVO SHARED
 ══════════════════════════════════════════ */
+@media (max-width: 1024px) {
+  .info-val   { color: var(--text); font-weight: 500; font-family: var(--font-mono); font-size: 0.73rem; }
+}
 @media (max-width: 900px) {
   .sobre-inner      { grid-template-columns: 1fr; gap: 3rem; }
   .sobre-sidebar    { position: static; }
   .contato-inner    { grid-template-columns: 1fr; gap: 3rem; }
   .contact-form-box { padding: 1.75rem; }
+  .info-val   { color: var(--text); font-weight: 500; font-family: var(--font-mono); font-size: 0.93rem; }
 }
 
 @media (max-width: 640px) {
@@ -773,4 +777,5 @@ textarea.form-control { min-height: 130px; }
   .form-row         { grid-template-columns: 1fr; }
   .skills-grid      { grid-template-columns: 1fr; }
   .projects-grid    { grid-template-columns: 1fr; }
+  .info-val   { color: var(--text); font-weight: 500; font-family: var(--font-mono); font-size: 0.63rem; }
 }
