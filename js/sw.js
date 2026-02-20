@@ -7,7 +7,6 @@ const CACHE_NAME = 'jv-portfolio-v1';
 
 const CACHE_URLS = [
   './',
-  './index.html',
   './sobre.html',
   './projetos.html',
   './contato.html',
