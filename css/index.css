@@ -229,6 +229,11 @@
 .t-comment{ color: var(--muted); font-style: italic; }
 .t-space  { margin-top: 0.3rem; }
 
+body.light .t-str, .t-prompt { color: #0b7250; }
+body.light .t-val    { color: #b36b00; }
+body.light .t-key    { color: #4060c0; }
+body.light .t-num    { color: #c94b4b; }
+
 .t-cursor-line {
   display: flex;
   align-items: center;

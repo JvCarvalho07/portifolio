@@ -281,3 +281,4 @@ document.addEventListener('DOMContentLoaded', () => {
 window.addEventListener('beforeunload', () => {
   CanvasBackground.destroy();
 });
+
