@@ -6,7 +6,7 @@
 const Layout = (() => {
   const NAV_HTML = `
     <nav id="nav">
-      <a href="index.html" class="nav-logo">
+      <a href="./" class="nav-logo">
         <span class="logo-bracket">[</span>
         <span class="logo-name">joao-victor</span>
         <span class="logo-ext">.dev</span>
@@ -14,7 +14,7 @@ const Layout = (() => {
       </a>
 
       <div class="nav-center">
-        <a href="index.html"    class="nav-link">Início</a>
+        <a href="./"    class="nav-link">Início</a>
         <a href="sobre.html"    class="nav-link">Sobre</a>
         <a href="projetos.html" class="nav-link">Projetos</a>
         <a href="contato.html"  class="nav-link">Contato</a>
@@ -34,7 +34,7 @@ const Layout = (() => {
     </nav>
 
     <div class="nav-drawer" id="nav-drawer">
-      <a href="index.html"    class="nav-link">Início</a>
+      <a href="./"    class="nav-link">Início</a>
       <a href="sobre.html"    class="nav-link">Sobre</a>
       <a href="projetos.html" class="nav-link">Projetos</a>
       <a href="contato.html"  class="nav-link">Contato</a>

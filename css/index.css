@@ -442,8 +442,9 @@
 
 .info-card-text {
   font-family: var(--font-mono);
-  font-size: 0.7rem;
+  font-size: 0.71rem;
   color: var(--muted);
+  font-weight: 900;
   line-height: 1.6;
   position: relative;
 }
