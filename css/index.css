@@ -303,6 +303,7 @@ body.light .t-num    { color: #c94b4b; }
   animation: heroIn 0.7s var(--ease) 1s forwards;
   z-index: 1;
 }
+body.light .scroll-indicator { color: black; }
 
 .scroll-mouse {
   width: 22px; height: 34px;
@@ -310,6 +311,7 @@ body.light .t-num    { color: #c94b4b; }
   border-radius: 11px;
   position: relative;
 }
+body.light .scroll-mouse { border-color: rgba(0, 0, 0, 0.233); }
 
 .scroll-wheel {
   width: 3px; height: 6px;
@@ -320,6 +322,7 @@ body.light .t-num    { color: #c94b4b; }
   transform: translateX(-50%);
   animation: scrollWheel 2s ease-in-out infinite;
 }
+body.light .scroll-wheel { background: #02701a;   width: 4px; height: 7px; }
 
 @keyframes scrollWheel {
   0%,100% { transform: translateX(-50%) translateY(0); opacity: 1; }
