@@ -466,7 +466,7 @@
     padding-top: calc(var(--nav-h) + 3rem);
     padding-bottom: 4rem;
   }
-  .scroll-indicator {bottom: -0.1rem;}
+  .scroll-indicator {display: none;}
   .hero-terminal { max-width: 1000px; }
   .hero-stats    { grid-template-columns: repeat(4, 1fr); }
   .quick-about-inner { grid-template-columns: 1fr; gap: 3rem; }

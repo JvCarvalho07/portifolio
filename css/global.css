@@ -33,7 +33,7 @@
   --font-mono:    'Fragment Mono', monospace;
 
   /* Espaçamento */
-  --nav-h:    64px;
+  --nav-h:    104px;
   --max-w:    1200px;
   --page-px:  clamp(1.25rem, 5vw, 4rem);
 
@@ -496,7 +496,12 @@ body.light .chip {
 /* ══════════════════════════════════════════
    RESPONSIVO
 ══════════════════════════════════════════ */
+@media (max-width: 1920px) {
+  .nav-drawer { display: none; }
+  
+}
 @media (max-width: 768px) {
+  .nav-drawer { display: flex; }
   .nav-center,
   .nav-status { display: none; }
   .nav-burger { display: flex; }
