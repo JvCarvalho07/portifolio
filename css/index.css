@@ -466,13 +466,27 @@
     padding-top: calc(var(--nav-h) + 3rem);
     padding-bottom: 4rem;
   }
-  .hero-terminal { max-width: 400px; }
+  .scroll-indicator {bottom: -0.1rem;}
+  .hero-terminal { max-width: 1000px; }
   .hero-stats    { grid-template-columns: repeat(4, 1fr); }
   .quick-about-inner { grid-template-columns: 1fr; gap: 3rem; }
+  .terminal-body { font-size: 1.3rem; }
 }
 
 @media (max-width: 640px) {
   .hero-name { font-size: clamp(2.5rem, 12vw, 4rem); }
   .hero-stats { grid-template-columns: 1fr 1fr; }
   .quick-about-visual { grid-template-columns: 1fr 1fr; }
+  .terminal-body { font-size: 1.0rem; }
+}
+
+@media (max-width: 440px) {
+  .hero-intro { font-size: 0.65rem; }
+  .hero-name { font-size: clamp(2rem, 14vw, 3.5rem); }
+  .hero-role { font-size: clamp(0.9rem, 3vw, 1.2rem); }
+  .hero-desc { font-size: 0.9rem; }
+  .hero-ctas { flex-direction: column; align-items: start; }
+  .hero-stack { max-width: fit-content; }
+  .hero-terminal { max-width: 420px;}
+  .terminal-body { font-size: 0.8rem; }
 }
